@@ -1,0 +1,20 @@
+section.keep-track .features-list ul {
+  width: 350px;
+  margin-top: 65px;
+  margin-left: 100px;
+}
+
+.features-list img {
+  max-width: unset;
+}
+
+section.supercharge-workflow ul {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  max-width: unset;
+}
+
+section.supercharge-workflow ul li {
+  width: calc(33% - 60px);
+}

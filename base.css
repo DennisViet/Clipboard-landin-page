@@ -1,0 +1,235 @@
+@font-face {
+  font-family: "Baijam";
+  src: url(./assets/bai_jamjuree/BaiJamjuree-Regular.ttf);
+  font-weight: normal;
+  font-size: normal;
+}
+
+@font-face {
+  font-family: "BaiJam";
+  src: url(./assets/bai_jamjuree/BaiJamjuree-Italic.ttf);
+  font-weight: normal;
+  font-weight: italic;
+}
+
+@font-face {
+  font-family: "BaiJam";
+  src: url(./assets/bai_jamjuree/BaiJamjuree-Bold.ttf);
+  font-weight: bold;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "BaiJam";
+  src: url(./assets/bai_jamjuree/BaiJamjuree-BoldItalic.ttf);
+  font-weight: bold;
+  font-weight: italic;
+}
+
+:root {
+  --light-colour: #fff;
+  --body-text: hsl(201, 11%, 66%);
+  --heading-text: hsl(210, 10%, 33%);
+  --link-colour: hsl(171, 66%, 44%);
+}
+
+*::before *::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "BaiJam", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  background: url(./images/bg-header-mobile.png) top center / contain no-repeat
+    var(--light-colour);
+  color: var(--body-text);
+
+  text-align: center;
+}
+
+a {
+  color: var(--heading-text);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--link-colour);
+}
+
+img {
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--heading-text);
+  margin: 0 auto 1rem;
+}
+
+h1 {
+  background: url(./images/logo.svg) no-repeat center / contain;
+  padding-top: 125px;
+  height: 0;
+  overflow: hidden;
+  margin: 125px auto 64px;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+h3 {
+  font-size: 28px;
+}
+
+h4 {
+  font-size: 24px;
+}
+
+p,
+ul {
+  margin: 1rem auto;
+  line-height: 26px;
+}
+
+header {
+  max-width: 730px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+article > header,
+section {
+  padding: 0 32px;
+}
+
+aside {
+  margin: 170px auto;
+}
+
+section {
+  margin: 160px auto 0;
+  max-width: 1100px;
+}
+
+section > header {
+  margin-bottom: 65px;
+}
+
+section.keep-track ul,
+section.supercharge-workflow ul,
+section.corporate-partners ul {
+  padding-left: 0;
+  list-style: none;
+  margin-top: 56px;
+}
+
+section.keep-track ul li,
+section.supercharge-workflow ul li {
+  margin-top: 48px;
+}
+
+section.corporate-partners ul li {
+  margin-top: 57px;
+}
+
+section.supercharge-workflow ul {
+  max-width: 420px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+section.supercharge-workflow h4::before {
+  display: block;
+  content: "";
+  background-repeat: no-repeat;
+  background-position: top center;
+  height: 80px;
+}
+
+section.supercharge-workflow li:nth-child(1) h4::before {
+  background-image: url(./images/icon-blacklist.svg);
+}
+
+section.supercharge-workflow li:nth-child(2) h4::before {
+  background-image: url(./images/icon-text.svg);
+}
+
+section.supercharge-workflow li:nth-child(3) h4::before {
+  background-image: url(./images/icon-preview.svg);
+}
+
+section.access-anywhere img {
+  max-width: 812px;
+  width: 100%;
+}
+
+section.corporate-partners h3 {
+  display: none;
+}
+
+section.corporate-partners {
+  max-width: 1280px;
+}
+
+.download-ctas {
+  margin-top: 46px;
+}
+
+.download-ctas a {
+  display: block;
+  color: var(--light-colour);
+  background-color: var(--link-colour);
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 28px;
+  padding: 13px 50px;
+  margin: 24px auto;
+  text-align: center;
+  box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.151333);
+}
+
+.download-ctas a:hover {
+  opacity: 80%;
+}
+
+.download-ctas a.mac {
+  --link-colour: hsl(233, 100%, 69%);
+}
+
+footer {
+  background: #f5f7f7;
+  padding: 50px;
+}
+
+footer h1 {
+  padding-top: 55px;
+  margin: 0 0 40px;
+}
+
+footer a {
+  display: block;
+  margin: 20px 0;
+}
+
+footer nav.social {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 30px;
+}
+
+footer nav.social a {
+  flex-grow: 0;
+}
+
+footer nav.social a:hover path {
+  fill: var(--link-colour);
+}
